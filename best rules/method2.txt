@@ -1,0 +1,100 @@
+Rule #274017:
+Antecedents: ['pal_sales_medium', 'na_sales_medium', 'other_sales_medium']
+Consequents: ['total_sales_medium', 'total score_low']
+Support: 0.6810
+Confidence: 0.9999
+Lift: 0.0097
+Leverage: 0.9278
+Conviction: 1.0000
+Zhang's Metric: 0.8844
+-------------------------
+Rule #247654:
+Antecedents: ['pal_sales_medium', 'na_sales_medium', 'other_sales_medium']
+Consequents: ['user ratings count_low', 'total_sales_medium']
+Support: 0.6810
+Confidence: 0.9999
+Lift: 0.0097
+Leverage: 0.9278
+Conviction: 1.0000
+Zhang's Metric: 0.8844
+-------------------------
+Rule #613864:
+Antecedents: ['pal_sales_medium', 'na_sales_medium', 'other_sales_medium']
+Consequents: ['user ratings count_low', 'total_sales_medium', 'total score_low']
+Support: 0.6810
+Confidence: 0.9999
+Lift: 0.0097
+Leverage: 0.9278
+Conviction: 1.0000
+Zhang's Metric: 0.8844
+-------------------------
+Rule #247682:
+Antecedents: ['user ratings count_low', 'na_sales_medium', 'pal_sales_medium']
+Consequents: ['total_sales_medium', 'total score_low']
+Support: 0.6876
+Confidence: 0.9997
+Lift: 0.0097
+Leverage: 0.9356
+Conviction: 0.5049
+Zhang's Metric: 0.8982
+-------------------------
+Rule #247686:
+Antecedents: ['pal_sales_medium', 'na_sales_medium', 'total score_low']
+Consequents: ['user ratings count_low', 'total_sales_medium']
+Support: 0.6876
+Confidence: 0.9997
+Lift: 0.0097
+Leverage: 0.9356
+Conviction: 0.5049
+Zhang's Metric: 0.8982
+-------------------------
+Rule #13786:
+Antecedents: ['pal_sales_medium', 'na_sales_medium']
+Consequents: ['total_sales_medium']
+Support: 0.6877
+Confidence: 0.9997
+Lift: 0.0097
+Leverage: 0.9354
+Conviction: 0.5048
+Zhang's Metric: 0.8982
+-------------------------
+Rule #79578:
+Antecedents: ['pal_sales_medium', 'na_sales_medium', 'total score_low']
+Consequents: ['total_sales_medium']
+Support: 0.6876
+Confidence: 0.9997
+Lift: 0.0097
+Leverage: 0.9353
+Conviction: 0.5047
+Zhang's Metric: 0.8980
+-------------------------
+Rule #247675:
+Antecedents: ['user ratings count_low', 'na_sales_medium', 'total score_low', 'pal_sales_medium']
+Consequents: ['total_sales_medium']
+Support: 0.6876
+Confidence: 0.9997
+Lift: 0.0097
+Leverage: 0.9353
+Conviction: 0.5047
+Zhang's Metric: 0.8980
+-------------------------
+Rule #64837:
+Antecedents: ['pal_sales_medium', 'user ratings count_low', 'na_sales_medium']
+Consequents: ['total_sales_medium']
+Support: 0.6876
+Confidence: 0.9997
+Lift: 0.0097
+Leverage: 0.9353
+Conviction: 0.5047
+Zhang's Metric: 0.8980
+-------------------------
+Rule #79581:
+Antecedents: ['pal_sales_medium', 'na_sales_medium']
+Consequents: ['total_sales_medium', 'total score_low']
+Support: 0.6876
+Confidence: 0.9996
+Lift: 0.0097
+Leverage: 0.9353
+Conviction: 0.3367
+Zhang's Metric: 0.8982
+-------------------------

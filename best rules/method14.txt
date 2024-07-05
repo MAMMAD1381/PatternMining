@@ -1,0 +1,100 @@
+Rule #79:
+Antecedents: ['total_sales_medium', 'total score_low']
+Consequents: ['user ratings count_low', 'na_sales_medium']
+Support: 0.7117
+Confidence: 0.9765
+Lift: 1.0000
+Leverage: 1.0000
+Conviction: 1.0000
+Zhang's Metric: 0.9322
+-------------------------
+Rule #78:
+Antecedents: ['user ratings count_low', 'total_sales_medium']
+Consequents: ['na_sales_medium', 'total score_low']
+Support: 0.7117
+Confidence: 0.9765
+Lift: 1.0000
+Leverage: 1.0000
+Conviction: 1.0000
+Zhang's Metric: 0.9322
+-------------------------
+Rule #15:
+Antecedents: ['total_sales_medium']
+Consequents: ['na_sales_medium']
+Support: 0.7117
+Confidence: 0.9765
+Lift: 0.9995
+Leverage: 0.9998
+Conviction: 0.9998
+Zhang's Metric: 0.9322
+-------------------------
+Rule #74:
+Antecedents: ['user ratings count_low', 'total_sales_medium', 'total score_low']
+Consequents: ['na_sales_medium']
+Support: 0.7117
+Confidence: 0.9765
+Lift: 0.9995
+Leverage: 0.9996
+Conviction: 0.9996
+Zhang's Metric: 0.9319
+-------------------------
+Rule #58:
+Antecedents: ['total_sales_medium', 'total score_low']
+Consequents: ['na_sales_medium']
+Support: 0.7117
+Confidence: 0.9765
+Lift: 0.9995
+Leverage: 0.9996
+Conviction: 0.9996
+Zhang's Metric: 0.9319
+-------------------------
+Rule #35:
+Antecedents: ['user ratings count_low', 'total_sales_medium']
+Consequents: ['na_sales_medium']
+Support: 0.7117
+Confidence: 0.9765
+Lift: 0.9995
+Leverage: 0.9996
+Conviction: 0.9996
+Zhang's Metric: 0.9319
+-------------------------
+Rule #37:
+Antecedents: ['total_sales_medium']
+Consequents: ['user ratings count_low', 'na_sales_medium']
+Support: 0.7117
+Confidence: 0.9764
+Lift: 0.9995
+Leverage: 0.9996
+Conviction: 0.9944
+Zhang's Metric: 0.9322
+-------------------------
+Rule #81:
+Antecedents: ['total_sales_medium']
+Consequents: ['user ratings count_low', 'na_sales_medium', 'total score_low']
+Support: 0.7117
+Confidence: 0.9764
+Lift: 0.9995
+Leverage: 0.9996
+Conviction: 0.9944
+Zhang's Metric: 0.9322
+-------------------------
+Rule #60:
+Antecedents: ['total_sales_medium']
+Consequents: ['na_sales_medium', 'total score_low']
+Support: 0.7117
+Confidence: 0.9764
+Lift: 0.9995
+Leverage: 0.9996
+Conviction: 0.9944
+Zhang's Metric: 0.9322
+-------------------------
+Rule #75:
+Antecedents: ['user ratings count_low', 'na_sales_medium']
+Consequents: ['total_sales_medium', 'total score_low']
+Support: 0.7117
+Confidence: 0.9746
+Lift: 1.0000
+Leverage: 1.0000
+Conviction: 0.9267
+Zhang's Metric: 0.9369
+-------------------------

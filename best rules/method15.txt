@@ -1,0 +1,100 @@
+Rule #2:
+Antecedents: ['user ratings count_low']
+Consequents: ['metascore_count_low']
+Support: 0.9321
+Confidence: 0.9322
+Lift: 1.0000
+Leverage: 0.9412
+Conviction: 1.0000
+Zhang's Metric: 1.0000
+-------------------------
+Rule #7:
+Antecedents: ['total score_low']
+Consequents: ['metascore_count_low']
+Support: 0.9321
+Confidence: 0.9322
+Lift: 1.0000
+Leverage: 0.9412
+Conviction: 1.0000
+Zhang's Metric: 1.0000
+-------------------------
+Rule #11:
+Antecedents: ['user ratings count_low', 'total score_low']
+Consequents: ['metascore_count_low']
+Support: 0.9321
+Confidence: 0.9322
+Lift: 1.0000
+Leverage: 0.9412
+Conviction: 1.0000
+Zhang's Metric: 1.0000
+-------------------------
+Rule #13:
+Antecedents: ['user ratings count_low']
+Consequents: ['metascore_count_low', 'total score_low']
+Support: 0.9321
+Confidence: 0.9322
+Lift: 1.0000
+Leverage: 0.9412
+Conviction: 1.0000
+Zhang's Metric: 1.0000
+-------------------------
+Rule #14:
+Antecedents: ['total score_low']
+Consequents: ['metascore_count_low', 'user ratings count_low']
+Support: 0.9321
+Confidence: 0.9322
+Lift: 1.0000
+Leverage: 0.9412
+Conviction: 1.0000
+Zhang's Metric: 1.0000
+-------------------------
+Rule #3:
+Antecedents: ['other_sales_medium']
+Consequents: ['user ratings count_low']
+Support: 0.8461
+Confidence: 0.9999
+Lift: 0.0000
+Leverage: 0.0000
+Conviction: 0.0000
+Zhang's Metric: 0.0000
+-------------------------
+Rule #8:
+Antecedents: ['other_sales_medium']
+Consequents: ['total score_low']
+Support: 0.8461
+Confidence: 0.9999
+Lift: 0.0000
+Leverage: 0.0000
+Conviction: 0.0000
+Zhang's Metric: 0.0000
+-------------------------
+Rule #17:
+Antecedents: ['other_sales_medium']
+Consequents: ['user ratings count_low', 'total score_low']
+Support: 0.8461
+Confidence: 0.9999
+Lift: 0.0000
+Leverage: 0.0000
+Conviction: 0.0000
+Zhang's Metric: 0.0000
+-------------------------
+Rule #1:
+Antecedents: ['metascore_count_low']
+Consequents: ['user ratings count_low']
+Support: 0.9321
+Confidence: 1.0000
+Lift: 1.0000
+Leverage: 0.9412
+Conviction: nan
+Zhang's Metric: 0.0015
+-------------------------
+Rule #4:
+Antecedents: ['user ratings count_low']
+Consequents: ['total score_low']
+Support: 0.9999
+Confidence: 1.0000
+Lift: 1.0000
+Leverage: 1.0000
+Conviction: nan
+Zhang's Metric: 1.0000
+-------------------------
