@@ -142,60 +142,81 @@ This section presents a comparison of results obtained from different methods us
 
 ### Best Rules
 
-This section lists the best association rules identified during the analysis. These rules highlight the most significant relationships found in the gaming data based on support, confidence, lift, and conviction metrics.
+This section lists the best association rules identified during the analysis. These rules highlight the most significant relationships found in the gaming data based on support, confidence, lift, leverage, conviction, and Zhang's metric.
 
 **Top Association Rules Table**
 
-| Antecedents       | Consequents       | Support | Confidence | Lift  | Leverage | Conviction | Zhang's Metric |
-|-------------------|-------------------|---------|------------|-------|----------|------------|----------------|
-| pal_sales_medium, na_sales_medium | total_sales_medium | 0.68 | 0.99 | 0.01 | 0.95 | 0.50 | 0.90 |
+| Antecedents                        | Consequents                | Support | Confidence | Lift  | Leverage | Conviction | Zhang's Metric |
+|------------------------------------|----------------------------|---------|------------|-------|----------|------------|----------------|
+| pal_sales_medium, na_sales_medium  | total_sales_medium         | 0.68    | 0.99       | 0.01  | 0.95     | 0.50       | 0.90           |
 | pal_sales_medium, user ratings count_low, na_sales_medium | total_sales_medium | 0.68 | 0.99 | 0.01 | 0.95 | 0.50 | 0.90 |
-| pal_sales_medium, na_sales_medium | user ratings count_low, total score_low | 0.68 | 0.99 | 0.89 | 0.93 | 0.33 | 0.87 |
-| {item9}           | {item10}          | 0.18    | 0.88       | 2.8   | 1.4        |
-| {item11, item12}  | {item13}          | 0.12    | 0.82       | 2.6   | 1.3        |
+| pal_sales_medium, na_sales_medium  | user ratings count_low, total score_low | 0.68 | 0.99 | 0.89 | 0.93 | 0.33 | 0.87 |
+| total score_low                    | metascore_count_low        | 0.93    | 0.93       | 0.00  | 0.00     | 0.00       | 1.0            |
+| user ratings count_low, na_sales_medium | total_sales_medium, total score_low | 0.71 | 0.97 | 1.0 | 1.0 | 0.92 | 0.93 |
+| total_sales_medium                 | na_sales_medium, total score_low | 0.71 | 0.97 | 0.99 | 0.99 | 0.99 | 0.93 |
 
-The table above includes the antecedents and consequents of the top association rules along with their respective support, confidence, lift, and conviction metrics. These metrics are defined as follows:
+The table above includes the antecedents and consequents of the top association rules along with their respective support, confidence, lift, leverage, conviction, and Zhang's metric. These metrics are defined as follows:
 
 - **Support**: The proportion of transactions in the dataset that contain the antecedent.
 - **Confidence**: The likelihood that the consequent is present when the antecedent is present.
 - **Lift**: The ratio of the observed support to that expected if the antecedent and consequent were independent.
-- **Conviction**: The measure of the strength of an association rule.
+- **Leverage**: The difference between the observed frequency of a rule and the expected frequency if the antecedent and consequent were independent.
+- **Conviction**: The measure of the strength of an association rule, indicating how often the rule makes an incorrect prediction.
+- **Zhang's Metric**: A measure that considers both support and confidence, giving a more balanced view of the rule's interestingness.
 
 **Explanation of Top Rules**
 
-1. **Rule 1**: `{item1, item2} -> {item3}`
-   - **Support**: 0.15
-   - **Confidence**: 0.85
-   - **Lift**: 2.5
-   - **Conviction**: 1.3
-   - **Explanation**: This rule indicates that when `item1` and `item2` are present, `item3` is also likely to be present with a high confidence of 85%. The lift value of 2.5 suggests that `item3` is 2.5 times more likely to occur with `item1` and `item2` than if it were independent.
+1. **Rule 1**: `{pal_sales_medium, na_sales_medium} -> {total_sales_medium}`
+   - **Support**: 0.68
+   - **Confidence**: 0.99
+   - **Lift**: 0.01
+   - **Leverage**: 0.95
+   - **Conviction**: 0.50
+   - **Zhang's Metric**: 0.90
+   - **Explanation**: This rule indicates that when `pal_sales_medium` and `na_sales_medium` are present, `total_sales_medium` is almost always present with a confidence of 99%. The high leverage value of 0.95 suggests a strong association between these variables.
 
-2. **Rule 2**: `{item4} -> {item5}`
-   - **Support**: 0.20
-   - **Confidence**: 0.80
-   - **Lift**: 3.0
-   - **Conviction**: 1.5
-   - **Explanation**: This rule shows that the presence of `item4` strongly indicates the presence of `item5` with an 80% confidence. The lift value of 3.0 means `item5` is three times more likely to appear with `item4`.
+2. **Rule 2**: `{pal_sales_medium, user ratings count_low, na_sales_medium} -> {total_sales_medium}`
+   - **Support**: 0.68
+   - **Confidence**: 0.99
+   - **Lift**: 0.01
+   - **Leverage**: 0.95
+   - **Conviction**: 0.50
+   - **Zhang's Metric**: 0.90
+   - **Explanation**: This rule shows that the presence of `pal_sales_medium`, `user ratings count_low`, and `na_sales_medium` strongly indicates the presence of `total_sales_medium`.
 
-3. **Rule 3**: `{item6, item7} -> {item8}`
-   - **Support**: 0.10
-   - **Confidence**: 0.90
-   - **Lift**: 2.0
-   - **Conviction**: 1.2
-   - **Explanation**: When `item6` and `item7` are present, `item8` is very likely to be present as well, with a confidence of 90%. The lift of 2.0 suggests that `item8`'s occurrence is twice as likely with `item6` and `item7`.
+3. **Rule 3**: `{pal_sales_medium, na_sales_medium} -> {user ratings count_low, total score_low}`
+   - **Support**: 0.68
+   - **Confidence**: 0.99
+   - **Lift**: 0.89
+   - **Leverage**: 0.93
+   - **Conviction**: 0.33
+   - **Zhang's Metric**: 0.87
+   - **Explanation**: When `pal_sales_medium` and `na_sales_medium` are present, `user ratings count_low` and `total score_low` are also likely to be present with a confidence of 99%.
 
-4. **Rule 4**: `{item9} -> {item10}`
-   - **Support**: 0.18
-   - **Confidence**: 0.88
-   - **Lift**: 2.8
-   - **Conviction**: 1.4
-   - **Explanation**: `Item10` frequently appears with `item9`, with an 88% confidence. The lift value of 2.8 indicates a strong association between `item9` and `item10`.
+4. **Rule 4**: `{total score_low} -> {metascore_count_low}`
+   - **Support**: 0.93
+   - **Confidence**: 0.93
+   - **Lift**: 0.00
+   - **Leverage**: 0.00
+   - **Conviction**: 0.00
+   - **Zhang's Metric**: 1.0
+   - **Explanation**: This rule shows that `total score_low` is almost always associated with `metascore_count_low`, with a high support and confidence of 93%.
 
-5. **Rule 5**: `{item11, item12} -> {item13}`
-   - **Support**: 0.12
-   - **Confidence**: 0.82
-   - **Lift**: 2.6
-   - **Conviction**: 1.3
-   - **Explanation**: The presence of `item11` and `item12` strongly indicates the presence of `item13`, with a confidence of 82%. The lift value of 2.6 shows that `item13` is 2.6 times more likely to occur with `item11` and `item12`.
+5. **Rule 5**: `{user ratings count_low, na_sales_medium} -> {total_sales_medium, total score_low}`
+   - **Support**: 0.71
+   - **Confidence**: 0.97
+   - **Lift**: 1.0
+   - **Leverage**: 1.0
+   - **Conviction**: 0.92
+   - **Zhang's Metric**: 0.93
+   - **Explanation**: This rule indicates a strong association between `user ratings count_low`, `na_sales_medium`, and `total_sales_medium`, `total score_low`.
 
-By analyzing these top association rules, you can gain insights into the frequent patterns and relationships within your gaming data.
+6. **Rule 6**: `{total_sales_medium} -> {na_sales_medium, total score_low}`
+   - **Support**: 0.71
+   - **Confidence**: 0.97
+   - **Lift**: 0.99
+   - **Leverage**: 0.99
+   - **Conviction**: 0.99
+   - **Zhang's Metric**: 0.93
+   - **Explanation**: When `total_sales_medium` is present, `na_sales_medium` and `total score_low` are also very likely to be present, with a high confidence of 97%.
+
