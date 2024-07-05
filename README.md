@@ -30,6 +30,7 @@ Ensure you have Python installed on your system. This project requires the follo
 - seaborn
 - numpy
 - warnings
+- sklearn
 
 ## Installation
 
@@ -43,13 +44,14 @@ pip install -r requirements.txt
 
 # Project Structure
 
-
 ```
 PatternMining/
 │
 ├── .git/
 │
 ├── .ipynb_checkpoints/
+│
+├── best_rules/
 │
 ├── datasets/
 │
@@ -59,18 +61,23 @@ PatternMining/
 │
 ├── main.ipynb
 │
+├── README.md
+│
 ├── requirements.txt
 ```
 
 **Description**
 
 - **.git/**: Contains the git version control system files.
-- **.ipynb_checkpoints/**: Stores the checkpoints of the Jupyter notebooks.
+- **.ipynb_checkpoints/**: Stores the checkpoints of the Jupyter notebooks, which help in recovering unsaved work.
+- **best_rules/**: Directory for storing the best association rules identified during the analysis.
 - **datasets/**: Directory for storing dataset files used in the project.
 - **.gitignore**: Specifies files and directories to be ignored by git.
 - **git.ipynb**: Jupyter notebook for git-related operations.
-- **main.ipynb**: Main Jupyter notebook for the project.
+- **main.ipynb**: Main Jupyter notebook for the project where data analysis and pattern mining tasks are performed.
+- **README.md**: Provides an overview of the project, setup instructions, and other relevant information.
 - **requirements.txt**: Lists the Python dependencies needed for the project.
+
 
 # Frequent Patterns & Assosication Rules
 
